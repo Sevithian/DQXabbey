@@ -1,0 +1,474 @@
+/* Body and Background Start */
+
+body#day {
+  background: url(../images/clouds.gif),
+    url(../images/bg.png) right bottom no-repeat,
+    url(../images/bg2.gif) left bottom no-repeat,
+    url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 55%, 45%, 45%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#evening {
+  background: url(../images/clouds2.gif),
+    url(../images/bg.png) right bottom no-repeat,
+    url(../images/bg2.gif) left bottom no-repeat,
+    url(../images/gradback3.jpg) fixed repeat-x;
+  background-size: 55%, 55%, 40%, auto;
+  background-color: #f6d575;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#night {
+  background: url(../images/bg4.png) right bottom no-repeat,
+    url(../images/bg3.gif) left bottom no-repeat,
+    url(../images/background2.jpg) fixed;
+  background-size: 40%, 55%, cover;
+  background-color: #fff;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqi {
+  background: url(../images/dqi/bg.png) center bottom no-repeat,
+    url(../images/clouds2.gif), url(../images/gradback3.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #f6d575;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqii {
+  background: url(../images/dqii/bg.png) center bottom no-repeat,
+    url(../images/clouds.gif), url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqiii {
+  background: url(../images/dqiii/bg.png) center bottom no-repeat,
+    url(../images/background2.jpg) fixed repeat-x;
+  background-size: 100%, cover;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqiv {
+  background: url(../images/dqiv/bg.png) bottom center no-repeat,
+    url(../images/clouds2.gif), url(../images/gradback3.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #f6d575;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqv {
+  background: url(../images/dqv/bg.png) center bottom no-repeat,
+    url(../images/clouds.gif), url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqvi {
+  background: url(../images/dqvi/bg.png) center bottom no-repeat,
+    url(../images/clouds.gif), url(../images/background2.jpg) fixed repeat-x;
+  background-size: 100%, 55%, cover;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqvii {
+  background: url(../images/dqvii/bg.png) bottom center no-repeat,
+    url(../images/clouds2.gif), url(../images/gradback3.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #f6d575;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqviii {
+  background: url(../images/dqviii/bg.png) center bottom no-repeat,
+    url(../images/clouds.gif), url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#dqmj {
+  background: url(../images/dqmj/bg.png) center bottom no-repeat,
+    url(../images/clouds.gif), url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 100%, 55%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+body#media {
+  background: url(../images/clouds.gif),
+    url(../images/bg.png) right bottom no-repeat,
+    url(../images/bg2.gif) left bottom no-repeat,
+    url(../images/gradback.jpg) fixed repeat-x;
+  background-size: 55%, 55%, 58%, auto;
+  background-color: #6bffda;
+  margin: 0px;
+  color: #000;
+  background-attachment: fixed;
+}
+/* Body and Background End */
+
+/* Start Header */
+
+header {
+  padding: 0px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+header h1 {
+  text-indent: -9999px;
+  align-items: center;
+  justify-content: center;
+  width: 880px;
+  height: 250px;
+  margin: 0px auto 0px auto;
+
+  bottom: 150px;
+}
+header h1 a {
+  display: block;
+
+  background-image: url(../images/sitelogo.png);
+  background-size: 750px auto;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin-left: 62px;
+  width: 100%;
+  height: 100%;
+  bottom: 150px;
+}
+
+/* Start Navbar */
+
+nav.header {
+  width: 920px;
+  height: 42px;
+  margin: 0 auto;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+nav.header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: double 4px #fde009;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  list-style-type: none;
+  background: rgb(202, 48, 66);
+  background: -moz-linear-gradient(
+    top,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3042', endColorstr='#ac1628',GradientType=0 );
+}
+nav.header ul li {
+  position: relative;
+  width: 20%;
+  display: inline;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+nav.header ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+  padding: 12px;
+  display: block;
+}
+nav.header ul li:not(.rightmost) {
+  border-right: solid 2px #fde009;
+}
+nav.header ul li.has-subnav ul.subnav li {
+  border: none;
+}
+nav.header ul li a:hover {
+  background-color: darkred;
+  overflow: hidden;
+}
+nav.header ul li.leftmost a:hover {
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+nav.header ul li.rightmost a:hover {
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+li#active {
+  background-color: #4caf50;
+}
+li#active.leftmost {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+li.rightmost {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-style: none;
+}
+nav.header ul.subnav {
+  visibility: hidden;
+  width: 300px;
+  overflow: hidden;
+  flex-direction: column;
+  background: rgb(202, 48, 66);
+  border: double 4px #fde009;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: -moz-linear-gradient(
+    top,
+    rgba(172, 22, 40, 1) 0%,
+    rgba(202, 48, 66, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(172, 22, 40, 1) 0%,
+    rgba(202, 48, 66, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(172, 22, 40, 1) 0%,
+    rgba(202, 48, 66, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3042', endColorstr='#ac1628',GradientType=0 );
+  position: absolute;
+  left: -2px;
+  top: 100%;
+}
+ul.subnav li a {
+  width: 300px;
+  text-align: left;
+  border-style: hidden;
+}
+ul.subnav li {
+  width: 300px;
+  text-align: left;
+}
+.has-subnav:hover .subnav,
+.has-subnav:focus .subnav,
+.has-subnav:focus-within .subnav,
+.subnav:hover {
+  visibility: visible;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* End Navbar */
+
+/* End Header */
+
+/* Start Main */
+
+main {
+  width: 840px;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0px auto;
+  border: double 20px;
+  border-color: rgba(172, 42, 40, 1);
+  white-space: normal;
+  opacity: 1;
+  z-index: 2;
+}
+main ul {
+  list-style-image: url(../images/slime.gif);
+}
+
+/* Top Banner Start */
+
+main img.banner {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid;
+  width: 99.75%;
+  margin-bottom: 0px;
+}
+
+/* Top Banner End */
+
+/* Body Content Block Start */
+
+div.center_content {
+  padding-left: 25%;
+  margin: 0 auto;
+  width: 100%;
+}
+.divblock {
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  background: rgb(202, 48, 66);
+  background: -moz-linear-gradient(
+    top,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(202, 48, 66, 1) 0%,
+    rgba(172, 22, 40, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca3042', endColorstr='#ac1628',GradientType=0 );
+  padding: 1px 0px 1px 0px;
+}
+.divblock h3 {
+  font-size: 24px;
+  width: 100%;
+  line-height: 45px;
+  text-align: left;
+  color: #fde009;
+  font-family: Arial;
+  margin-left: 50px;
+}
+
+/* Body Content Block End */
+
+/* Featured Section Start */
+
+section.featured {
+  padding: 20px 30px 20px 30px;
+  margin: 0 auto;
+}
+.featured ul {
+  padding-left: 20px;
+}
+.featured img {
+  display: block;
+  margin: 20px auto 20px auto;
+}
+.featured img.gameimg {
+  width: 590px;
+  text-align: center;
+  border: solid 4px black;
+}
+.featured h1 {
+  font-size: 32px;
+  text-align: center;
+}
+.featured p {
+  font-size: 16px;
+  font-family: arial;
+  line-height: 24px;
+}
+#list {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.left {
+  display: inline-block;
+  margin-left: auto;
+  padding-right: 50px;
+}
+.right {
+  display: inline-block;
+}
+.wrapper {
+  text-align: center;
+}
+.wrapper ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  *display: inline;
+}
+.centerwrap {
+  text-align: center;
+}
+.centerwrap ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  zoom: 1;
+  *display: inline;
+}
+
+/* Featured Section End */
+
+/* Footer Start */
+
+div#sociallinks {
+  display: inline;
+  float: left;
+}
+div#sociallinks img {
+  display: inline;
+  width: 32px;
+  margin: 8px 0px 0px 0px;
+  padding-right: 3px;
+}
+nav#bottomnav ul {
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  list-style-image: none;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  width: 75%;
+  padding: 0px;
+}
+nav#bottomnav ul li {
+  color: #fff;
+  display: inline;
+  text-align: center;
+}
+nav#bottomnav ul li a {
+  color: #fff;
+  display: inline;
+  text-align: center;
+  font-family: arial;
+}
+
+/* Footer End */
+
+/* border: solid 5px white; */
