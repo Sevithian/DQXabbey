@@ -170,6 +170,7 @@ nav.header {
   top: 0px;
   z-index: 2;
 }
+
 nav.header ul {
   list-style: none;
   display: flex;
