@@ -317,6 +317,15 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
+.teammoon-button a {
+  width: 210px;
+  height: 75px;
+  display: block;
+  background: url(../images/teammoon_discord_button.png);
+  text-indent: -9999em;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 #left-navi-twitter-body {
   padding-top: 1px;
@@ -324,7 +333,7 @@ p {
 }
 
 #left-navi-twitter-main {
-  max-height: 435px;
+  max-height: 708px;
   overflow: scroll;
   margin-right: auto;
   margin-left: auto;
