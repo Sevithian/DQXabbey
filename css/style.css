@@ -241,6 +241,11 @@ nav.header ul.subnav {
   left: -2px;
   top: 100%;
 }
+
+nav.header ul.subnav#community {
+  width: 150px;
+}
+
 ul.subnav li a {
   width: 300px;
   text-align: left;
@@ -307,7 +312,15 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
-
+.dragonsden-button a {
+  width: 210px;
+  height: 75px;
+  display: block;
+  background: url(../images/dragonsden_discord_button.png);
+  text-indent: -9999em;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .worldwide-button a {
   width: 210px;
   height: 75px;
