@@ -339,6 +339,15 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
+.donate-button a {
+  width: 210px;
+  height: 75px;
+  display: block;
+  background: url(../images/donate_button.png);
+  text-indent: -9999em;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 #left-navi-twitter-body {
   padding-top: 1px;
