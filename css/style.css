@@ -243,7 +243,7 @@ nav.header ul.subnav {
 }
 
 nav.header ul.subnav#community {
-  width: 150px;
+  width: 185px;
 }
 
 ul.subnav li a {
@@ -326,6 +326,15 @@ p {
   height: 75px;
   display: block;
   background: url(../images/worldwide_discord_button.png);
+  text-indent: -9999em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.guardians-button a {
+  width: 210px;
+  height: 75px;
+  display: block;
+  background: url(../images/guardians_button.png);
   text-indent: -9999em;
   white-space: nowrap;
   overflow: hidden;
