@@ -201,11 +201,10 @@
                           >, dynamically altering how the game displays text to
                           provide clear and concise translations for menus,
                           items, skills, monster names, player names, and more.
-                          More recently, Clarity has the potential to replace
-                          in-game dialogue with Ahkmon's machine translation,
-                          paving the way for a future where both tools will be
-                          integrated directly into Clarity as its own standalone
-                          program.
+                          More recently, Clarity can now replace
+                          in-game dialogue with Ahkmon's machine translation.
+                          Clarity has essentially superceded ahkmon's
+                          functionality, making ahkmon's use optional.
                         </p>
 
                         <br />
@@ -220,7 +219,14 @@
                           power of a full translation team. Using API
                           translation services allows for quick, high-volume
                           requests of translations that keep up with a player's
-                          momentum as they trudge through dialogue in-game.
+                          momentum as they trudge through dialogue in-game. Ahkmon
+                          is essentially a precursor to Clarity, so it's not necessary
+                          to use in conjuction with Clarity aside from a few niche
+                          features that Clarity has yet to implement. If you'd like to know
+                          what exactly these niche features are, check out the
+                          <a href="https://github.com/dqx-translation-project/dqxclarity/wiki/Frequently-Asked-Questions">
+                          FAQ
+                          </a>.
                         </p>
 
                         <br />
@@ -235,158 +241,6 @@
                         <br />
                         <br />
                       </div>
-                    </div>
-                  </div>
-
-                  <br />
-                  <br />
-
-                  <div class="infoBox fullWidth">
-                    <div class="infoBox_f fullWidth">
-                      <h2 class="title_note title_icon fullWidth">
-                        Installing DQXclarity
-                      </h2>
-                      <br />
-
-                      <p>
-                        Go to
-                        <a
-                          href="https://github.com/dqx-translation-project/dqxclarity"
-                          >DQXclarity's GitHub page</a
-                        >
-                        and
-                        <strong>
-                          download the latest release from the releases
-                          tab.</strong
-                        >
-                      </p>
-
-                      <img
-                        src="../../images/utilities/clarity1.png"
-                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
-                      />
-
-                      <br />
-
-                      <p style="text-align: center">
-                        <strong
-                          ><a
-                            href="https://github.com/dqx-translation-project/dqxclarity/wiki"
-                            >READ THE README.</a
-                          >
-                          OUR ABILITY TO HELP YOU IF SOMETHING BREAKS DEPENDS ON
-                          IT.</strong
-                        >
-                      </p>
-
-                      <br />
-
-                      <p>
-                        <strong>Extract dqxclarity.zip</strong> and locate
-                        <strong>DQXclarity.exe</strong>
-                      </p>
-
-                      <img
-                        src="../../images/utilities/clarity2.png"
-                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
-                      />
-
-                      <br />
-
-                      <p>
-                        <strong>Run DQXclarity.exe</strong>, which will bring up
-                        this GUI.
-                      </p>
-
-                      <img
-                        src="../../images/utilities/claritygui.png"
-                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
-                      />
-
-                      <br />
-
-                      <p>
-                        There are multiple options here that function as
-                        follows:
-                      </p>
-                      <ul style="list-style: none">
-                        <li>
-                          <p>
-                            <strong>Translate Player Names:</strong> Allows
-                            clarity to dynamically translate visible player
-                            names.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <strong>Translate NPC Names:</strong> Allows clarity
-                            to dynamically translate visible NPC and monster
-                            names.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <strong>Enable Debug Logging:</strong> Logs useful
-                            debug information to the console. Only really needed
-                            to diagnose/troubleshoot problems, otherwise you can
-                            just leave this unchecked.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <strong>Translate Master Quests:</strong> Currently
-                            disabled until further notice.
-                          </p>
-                        </li>
-
-                        <li>
-                          <p>
-                            <strong>Use API Dialogue Insertion:</strong>
-                            Using a translation API (Either DeepL or Google
-                            Translate API), inject translations directly into
-                            game dialogue. See the section below how to set this
-                            up!
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <strong>Grab Newest Translations:</strong>
-                            Grabs the latest translation database from the
-                            translation repository.
-                          </p>
-                        </li>
-                      </ul>
-                      <br />
-
-                      <br />
-
-                      <p>
-                        <strong
-                          >If you are using API Dialogue Insertion above, you
-                          must first set up a DeepL account detailed below and
-                          enter your API key using the API Service Settings
-                          button. Once you have done this, run DQX. When the
-                          game launches and you see the announcement dialogue
-                          before the title screen,</strong
-                        >
-                      </p>
-                      <p>
-                        <strong>Run dqxclarity.</strong> This will bring up a
-                        powershell window. Let it generate a venv folder. Do not
-                        touch the game nor the powershell window until clarity
-                        finishes. Clarity will transition into translating the
-                        game automatically and will notify you when it's
-                        finished. NOTE: If Clarity is automatically closing
-                        itself before finishing, PLEASE CAREFULLY READ THE
-                        TROUBLESHOOTING SECTION DETAILED
-                        <a
-                          href="https://github.com/dqx-translation-project/dqxclarity/wiki/Installation#troubleshooting"
-                          >HERE</a
-                        >.
-                      </p>
-
-                      <br />
-                      <br />
                     </div>
                   </div>
 
@@ -413,10 +267,14 @@
                       <br />
 
                       <p style="text-align: center">
+                        In order to have English dialogue displayed natively
+                        in Dragon Quest X's dialogue box, you must first sign up
+                        for a DeepL account in order to obtain an API key.
                         If you're uncomfortable providing these details,
                         <strong>
                           you may consider using the Google Translate API as an
-                          alternative to DeepL </strong
+                          alternative to DeepL 
+                          (detailed <a href="https://github.com/dqx-translation-project/dqxclarity/wiki/Creating-a-Google-Translate-API-Key">here</a>)</strong
                         >, however, DeepL is widely accepted by the community to
                         be superior, and will be the only method covered in this
                         guide (as of now). You can get more information on their
@@ -520,7 +378,180 @@
                   <div class="infoBox fullWidth">
                     <div class="infoBox_f fullWidth">
                       <h2 class="title_note title_icon fullWidth">
-                        Setting Up Ahkmon
+                        Installing DQXclarity
+                      </h2>
+                      <br />
+
+                      <p>
+                        Go to
+                        <a
+                          href="https://github.com/dqx-translation-project/dqxclarity"
+                          >DQXclarity's GitHub page</a
+                        >
+                        and
+                        <strong>
+                          download the latest release from the releases
+                          tab.</strong
+                        > Only download the zip file. Do not download the
+                        source code files as they will not work.
+                      </p>
+
+                      <img
+                        src="../../images/utilities/clarity1.png"
+                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
+
+                      <br />
+
+                      <p style="text-align: center">
+                        <strong
+                          ><a
+                            href="https://github.com/dqx-translation-project/dqxclarity/wiki"
+                            >READ THE README.</a
+                          >
+                          OUR ABILITY TO HELP YOU IF SOMETHING BREAKS DEPENDS ON
+                          IT.</strong
+                        >
+                      </p>
+
+                      <br />
+
+                      <p>
+                        <strong>Extract dqxclarity.zip</strong> and locate
+                        <strong>DQXclarity.exe</strong>
+                      </p>
+
+                      <img
+                        src="../../images/utilities/clarity2.png"
+                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
+
+                      <br />
+
+                      <p>
+                        <strong>Run DQXclarity.exe</strong>, which will bring up
+                        this GUI.
+                      </p>
+
+                      <img
+                        src="../../images/utilities/claritygui.png"
+                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
+
+                      <br />
+
+                      <p>
+                        There are multiple options here that function as
+                        follows:
+                      </p>
+                      <ul style="list-style: none">
+                        <li>
+                          <p>
+                            <strong>Translate Player Names:</strong> Allows
+                            clarity to dynamically translate visible player
+                            names.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Translate NPC Names:</strong> Allows clarity
+                            to dynamically translate visible NPC and monster
+                            names.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Enable Debug Logging:</strong> Logs useful
+                            debug information to the console. Only really needed
+                            to diagnose/troubleshoot problems, otherwise you can
+                            just leave this unchecked.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Translate Master Quests:</strong> Currently
+                            disabled until further notice. Checking this will
+                            not do anything.
+                          </p>
+                        </li>
+
+                        <li>
+                          <p>
+                            <strong>Use API Dialogue Insertion:</strong>
+                            Using a translation API (Either DeepL or Google
+                            Translate API), inject translations directly into
+                            game dialogue. <strong>See the section above how to set this
+                            up!</strong> Once you have an API key, fill in the appropriate
+                            box and check the box of the service you're using
+                            (do not check both.)
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Grab Newest Translations:</strong>
+                            Grabs the latest translation database from the
+                            translation repository.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Install Python:</strong>
+                            If you have never used Clarity before, you must
+                            first install Python. You can do this manually
+                            with this button, or the Python installer will
+                            automatically start upon launching Clarity.
+                          </p>
+                        </li>
+                      </ul>
+                      <br />
+
+                      <br />
+
+                      <p>
+                        <strong>
+                          Once you are satisfied with your Clarity settings, run 
+                          Dragon Quest X. Don't launch Clarity just yet. After a few
+                          seconds, you should see this screen below.</strong>
+                      </p>
+                      <img
+                        src="../../images/utilities/announcements.png"
+                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
+                      <p>
+                        <strong>Now launch Clarity.</strong> This will bring up a
+                        Powershell window. Let it generate a venv folder. Do not
+                        touch the game nor the Powershell window until Clarity
+                        finishes. If you do not have Python installed, the Python
+                        installer will automatically start.
+                        Clarity will transition into translating the
+                        game automatically and will notify you when it's
+                        finished. You'll see following message in the Powershell
+                        window once it's complete.
+                        <img src="../../images/utilities/clarity_done.png"/>
+                        Keep the Powershell window minimized and enjoy Dragon Quest X!
+                        <br/>
+                        <strong>NOTE: If Clarity's Powershell window is 
+                        automatically closing itself before finishing, PLEASE CAREFULLY 
+                        READ THE TROUBLESHOOTING SECTION DETAILED
+                        <a
+                          href="https://github.com/dqx-translation-project/dqxclarity/wiki/Installation#troubleshooting"
+                          >HERE</a
+                        >.</strong>
+                      </p>
+
+                      <br />
+                      <br />
+                    </div>
+                  </div>
+
+                  <br />
+                  <br />
+
+
+                  <div class="infoBox fullWidth">
+                    <div class="infoBox_f fullWidth">
+                      <h2 class="title_note title_icon fullWidth">
+                        Setting Up Ahkmon (optional)
                       </h2>
                       <br />
 
