@@ -199,10 +199,9 @@
                             Clarity replaces Japanese text in-game with English
                             translations</strong
                           >, dynamically altering how the game displays text to
-                          provide clear and concise translations for menus,
-                          items, skills, monster names, player names, and more.
-                          More recently, Clarity can now replace
-                          in-game dialogue with Ahkmon's machine translation.
+                          provide clear and concise translations for dialogue
+                          spoken by a majority of NPCs, and provides on the fly translations
+                          for player names, monster names, and NPC names.
                           Clarity has essentially superceded ahkmon's
                           functionality, making ahkmon's use optional.
                         </p>
@@ -267,8 +266,9 @@
                       <br />
 
                       <p style="text-align: center">
-                        In order to have English dialogue displayed natively
-                        in Dragon Quest X's dialogue box, you must first sign up
+                       A majority of Dragon Quest X's NPC dialogue is sent via
+                       their server, so it must be translated dynamically through a 
+                       translation service. To use DeepL as this service, you must first sign up
                         for a DeepL account in order to obtain an API key.
                         If you're uncomfortable providing these details,
                         <strong>
@@ -369,8 +369,8 @@
                       <br/>
                       <p style="text-align: center">
                         <strong>IMPORTANT NOTE: If you choose not to use an API,
-                          Clarity will NOT be able to translate a majority of
-                          non-cutscene dialogue. You have been warned.
+                          a majority of NPC dialogue in Dragon Quest X will remain
+                          in Japanese. You have been warned.
                         </strong>
                       </p>
 
@@ -399,7 +399,7 @@
                         <strong>
                           download the latest release from the releases
                           tab.</strong
-                        > Only download the zip file. Do not download the
+                        > Download the <strong>dqxclarity.zip</strong> file. Do not download the
                         source code files as they will not work.
                       </p>
 
@@ -470,18 +470,30 @@
                         <br/>
                         <li>
                           <p>
-                            <strong>Enable Debug Logging:</strong> Logs useful
-                            debug information to the console. Only really needed
-                            to diagnose/troubleshoot problems, otherwise you can
-                            just leave this unchecked.
+                            <strong>Enable Community Logging:</strong> Logs useful
+                            information about data that is loaded while playing
+                            Dragon Quest X. This is useful for discovering new 
+                            files the translators do not have yet. This is
+                            appreciated to leave on for that purpose, but it is 
+                            not required.
                           </p>
                         </li>
                         <br/>
                         <li>
                           <p>
-                            <strong>Grab Newest Translations:</strong>
-                            Grabs the latest translation database from the
-                            translation repository.
+                            <strong>Disable Update Checking:</strong>
+                            Disables Clarity checking for updates and 
+                            stops custom translation files from being 
+                            updated.
+                          </p>
+                        </li>
+                        <br/>
+                        <li>
+                          <p>
+                            <strong>Enable Debug Logging:</strong> Logs useful
+                            debug information to the console. Only really needed
+                            to diagnose/troubleshoot problems, otherwise you can
+                            just leave this unchecked.
                           </p>
                         </li>
                         <br/>
@@ -511,9 +523,10 @@
                       <p>
                         For the best English experience, it's recommended to
                         check <strong>Translate Player Names</strong>,
-                        <strong>Translate NPC Names</strong>, <strong>Grab
-                          Newest Translations</strong>, and have <strong>
-                            API Functionality Enabled</strong>.
+                        <strong>Translate NPC Names</strong>, and have <strong>
+                            API Functionality Enabled</strong>. Please consider also
+                            having the <strong>Community Logger</strong> option checked,
+                            too.
                       </p>
                       <br />
 
