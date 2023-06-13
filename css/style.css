@@ -43,7 +43,7 @@ body {
 /*#region Body Background Styles */
 
 body#day {
-  background: url(../images/clouds.gif),
+  background: url(../images/hello-yuki.jpg),
     url(../images/bg.png) right bottom no-repeat,
     url(../images/bg2.gif) left bottom no-repeat,
     url(../images/gradback.jpg) fixed repeat-x;
