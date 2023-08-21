@@ -386,42 +386,7 @@
                       <h2 class="title_note title_icon fullWidth">
                         Installing DQXclarity
                       </h2>
-                      <br />
-
-                      
-                      <p>
-                        <strong>BEFORE GOING ANY FURTHER, YOU MUST DOWNLOAD THE ENGLISH
-                        PATCHED FILES. IT'S ALSO RECOMMENDED TO DOWNLOAD
-                        AND REPLACE THE LAUNCHER AND CONFIG EXECUTABLES WITH 
-                        THEIR ENGLISH TRANSLATED VERSIONS.</strong>
-                      </p>
-                      <br/>
-                      <p>
-                        To download the <strong>English patched files</strong>, go <strong><a href="https://github.com/dqx-translation-project/dqxclarity/releases/latest">here</a></strong>.
-                        You will see two files listed under <strong>Assets</strong>: <strong>data000000000.win32.dat1</strong>
-                        and <strong>data000000000.win32.idx</strong>. <strong>Download both of them.</strong>
-                      </p>
-                    <br/>
-                      <p>
-                        Download the <strong>Translated Launcher from 
-                          <a href="https://www.mediafire.com/file/lhz9v6xui5mbsro/DQXLauncher.exe/file">here</a></strong>
-                          and the <strong>Translated Config from <a href="https://github.com/dqx-translation-project/dqx_en_config/releases/latest">here</a></strong>.
-                      </p>
-                      <p>
-                      <br/>
-                      <p>
-                        Once you've downloaded the English patched files, navigate to the install
-                        location you chose for Dragon Quest X (by default, this will
-                        be <strong>C:\Program Files (x86)\SquareEnix\DRAGON QUEST X</strong>).
-                        Once there, enter the folder <strong>Game</strong>, then <strong>Content</strong>,
-                        and finally <strong>Data</strong>. You'll want to place both <strong>data000000000</strong> files
-                        you downloaded into this folder. <strong>BEFORE DOING THIS, IT'S RECOMMENDED
-                          TO BACK UP THE ORIGINAL data000000000.win32.idx FILE.
-                        </strong>
-
-                      </p>
-
-                      <br>
+                    <br />
 
                       <hr style="width: 85%" />
 
@@ -436,7 +401,8 @@
                         <strong>
                           download the latest release from the releases
                           tab.</strong
-                        > Download the <strong>dqxclarity.zip</strong> file. Do not download the
+                        > Make sure the release is tagged "Latest" and not
+                        "Pre-release". Download the <strong>dqxclarity.zip</strong> file. Do not download the
                         source code files as they will not work.
                       </p>
 
@@ -473,7 +439,11 @@
                       <br />
 
                       <p>
-                        <strong>Run DQXclarity.exe</strong>, which will bring up
+                        <strong>Run DQXclarity.exe as an adminstrator.</strong> You can
+                        do this by either right clicking the exe -> Run as administrator,
+                        OR right click the exe -> select "Properties" -> click the "Compatiblity"
+                        tab -> check the "Run this program as an administrator" box. (This is
+                        necessary to download necessary game files.) Once it opens, you will see
                         this GUI.
                       </p>
 
@@ -488,6 +458,7 @@
                         There are multiple options here that function as
                         follows:
                       </p>
+                      <br/>
                       <ul style="list-style: none">
                         <li>
                           <p>
@@ -507,6 +478,27 @@
                         <br/>
                         <li>
                           <p>
+                            <strong>Update Translated Game Files:</strong> Downloads
+                            the latest game data files which translate various
+                            elements into the game into English, such as menus, item/ability
+                            names, and cutscene dialogue. <strong>As a first
+                            time Clarity user, make sure this is checked or your
+                            game won't be in English!
+                            </strong>
+                          </p>
+                        </li>
+                        <br/>
+                        <li>
+                          <p>
+                            <strong>Use API Dialogue:</strong> Checking this, in
+                            combination with the API Service Settings button
+                            described below, enables live translation of in game
+                            text that the English game files cannot translate.
+                          </p>
+                        </li>
+                        <br/>
+                        <li>
+                          <p>
                             <strong>Enable Community Logging:</strong> Logs useful
                             information about data that is loaded while playing
                             Dragon Quest X. This is useful for discovering new 
@@ -520,7 +512,7 @@
                           <p>
                             <strong>Disable Update Checking:</strong>
                             Disables Clarity checking for updates and 
-                            stops custom translation files from being 
+                            stops translation files from being
                             updated.
                           </p>
                         </li>
@@ -543,43 +535,61 @@
                             box and check the box of the service you're using
                             (do not check both.) If your API key is valid, you will
                             see <strong>API Functionality Enabled!</strong> displayed.
+                            Make sure you also have the Use API Dialogue option checked
+                            as well.
                           </p>
                         </li>
                         <br/>
-                        <li>
-                          <p>
-                            <strong>Install Python:</strong>
-                            If you have never used Clarity before, you must
-                            first install Python. You can do this manually
-                            with this button, or the Python installer will
-                            automatically start upon launching Clarity.
-                          </p>
-                        </li>
                       </ul>
                       <br />
                       <p>
                         For the best English experience, it's recommended to
                         check <strong>Translate Player Names</strong>,
-                        <strong>Translate NPC Names</strong>, and have <strong>
-                            API Functionality Enabled</strong>. Please consider also
-                            having the <strong>Community Logger</strong> option checked,
-                            too.
+                        <strong>Translate NPC Names</strong>, 
+                        <strong>Update Translated Game Files</strong>,
+                        <strong>Use API Dialogue</strong>
+                        and have <strong> API Functionality Enabled</strong>. Please consider
+                        having the <strong>Community Logger</strong> option checked,
+                        too.
                       </p>
                       <br />
 
                       <p>
                         <strong>
-                          Once you are satisfied with your Clarity settings, run 
-                          Dragon Quest X. Don't launch Clarity just yet.
-                          The game will take a few seconds to launch. If the 
-                        game is already open, read on.</strong>
+                        Once you are satisfied with your Clarity settings, click the
+                        "Launch Clarity" button. A blue Powershell window will appear,
+                        and it will go through some initial setup. This may take a few
+                        seconds, so don't click anywhere inside the window.
+                        If you do not have Python installed, it will automatically
+                        install for you. After Python finishes installing, you will
+                        be prompted to select where your DQX installation is.
+                      </strong>
                       </p>
-                      <br/>
+                      <img
+                      src="../../images/utilities/dqx_directory.png"
+                      style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
                       <br/>
                       <p>
-                        If you are a trial player, you will see a screen similar to
-                        this upon launching the game. <strong>Don't press anything
-                        yet! Read below to see the next step.</strong>
+                        A window will appear to select the "DRAGON QUEST X"
+                        folder wherever you installed the game. By default,
+                        this will be <strong>C:/Program Files (x86)/SquareEnix/DRAGON QUEST X</strong>.
+                        Navigate to this location (or wherever else you chose to install it), 
+                        select the folder, and then click the "Select Folder"
+                        button. If you did
+                        this correctly, Clarity will continue and you will see this message
+                        appear in the Powershell window after a second or two:
+                      </p>
+                      <img
+                        src="../../images/utilities/search_for_dqx.png"
+                        style="width: 70%; border: 2px rgb(0, 0, 0) solid"
+                      />
+                      <br/>
+                      <p>
+                        Once you see this message, use the open launcher to log into
+                        your account. Make sure your account is selected on the
+                        top list on the left side of the launcher. Once logged
+                        in, you should see the message below appear in English:
                       </p>
                       <img
                         src="../../images/utilities/trialmessage.png"
@@ -587,9 +597,9 @@
                       />
                       <br/>
                       <p>
-                        If you are NOT a trial player, this is what you will see
-                        upon launching the game. <strong>Don't press anything
-                          yet! Read below to see the next step.</strong>
+                        If this is in English, success! You now have the English
+                        files. After moving on from this screen, you'll see this
+                        screen below:
                         </p>
                       </p>
                       <img
@@ -597,30 +607,24 @@
                         style="width: 70%; border: 2px rgb(0, 0, 0) solid"
                       />
                       <p>
-                        <strong>Now you'll want to launch Clarity.</strong> This will bring up a
-                        Powershell window. The first time you launch it, it will go
-                        through a process of creating necessary folders. Do not
-                        touch the game nor the Powershell window until Clarity
-                        finishes. If you do not have Python installed, the Python
-                        installer will automatically start. Go through the installation
-                        prompts. Afterwards,
-                        Clarity will transition into translating the
-                        game automatically and will notify you when it's
-                        finished. You'll see following message in the Powershell
-                        window once it's complete.
+                        <strong>This is when Clarity will activate itself.</strong>
+                        It should take no more than a few seconds. If you see this
+                        message below in the Powershell window, Clarity has
+                        successfully activated:
                         <img src="../../images/utilities/clarity_done.png"/>
                         Keep the Powershell window minimized and enjoy Dragon Quest X!
                         You can now press Enter to head to the main login screen. 
                         <strong>Please note that you will need to run Clarity again in 
-                          this fashion each time you boot up the game.
+                          this fashion during each play session.
                         </strong>
                         <br/>
                         <br/>
                         <strong>NOTE: If Clarity's Powershell window is 
-                        automatically closing itself before finishing, PLEASE CAREFULLY 
+                        automatically closing itself before finishing or spitting
+                        out some kind of error, PLEASE CAREFULLY 
                         READ THE TROUBLESHOOTING SECTION DETAILED
                         <a
-                          href="https://github.com/dqx-translation-project/dqxclarity/wiki/Installation#troubleshooting"
+                          href="https://github.com/dqx-translation-project/dqxclarity/wiki/Installation#pencil2-installation-troubleshooting"
                           >HERE</a
                         >.</strong>
                       </p>
