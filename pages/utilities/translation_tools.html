@@ -182,57 +182,25 @@
                         <br />
 
                         <p style="text-align: center">
-                          The two main translation tools that exist for Dragon
-                          Quest X are
-                          <strong>DQXclarity</strong> and
-                          <strong>Ahkmon.</strong> These tools, when working in
-                          conjunction, makes Dragon Quest X incredibly easy to
-                          access despite its language barrier.
+                          <strong>DQXClarity</strong> is the main translation tool for Dragon Quest X,
+                          and allows a large portion of the game to be translated into English with a 
+                          few simple set-up steps.
                         </p>
 
                         <br />
 
                         <p>
-                          Through manipulation and injection of translated
-                          strings,
-                          <strong>
-                            Clarity replaces Japanese text in-game with English
-                            translations</strong
-                          >, dynamically altering how the game displays text to
-                          provide clear and concise translations for dialogue
-                          spoken by a majority of NPCs, and provides on the fly translations
-                          for player names, monster names, and NPC names.
-                          Clarity has essentially superceded ahkmon's
-                          functionality, making ahkmon's use optional.
+                          DQXClarity exists in two parts: a translated data file that overwrites Japanese text in 
+                          the local game client, and a program that translates text sent from the server (such as
+                          NPC text, player names, and monster names) on the fly using an API service. Using both of
+                          these parts in conjunction will give you the best English experience.
                         </p>
-
+                        <br/>
+                        <p>Before you can use the DQXClarity program, you must register for 
+                          an API service, which is detailed below. <strong>Please read all the steps 
+                          very carefully.</strong>
+                        </p>
                         <br />
-
-                        <p>
-                          Using available online translation API services,
-                          <strong>
-                            Ahkmon produces machine-translated interpretations
-                            of dialogue on an overlay</strong
-                          >, allowing players to fully experience the game's
-                          dialogue in it's entirety without the localization
-                          power of a full translation team. Using API
-                          translation services allows for quick, high-volume
-                          requests of translations that keep up with a player's
-                          momentum as they trudge through dialogue in-game. Ahkmon
-                          is essentially a precursor to Clarity, so it's not necessary
-                          to use in conjuction with Clarity aside from a few niche
-                          features that Clarity has yet to implement. If you'd like to know
-                          what exactly these niche features are, check out the
-                          <a href="https://github.com/dqx-translation-project/dqxclarity/wiki/Frequently-Asked-Questions">
-                          FAQ
-                          </a>.
-                        </p>
-
-                        <br />
-                        <p style="text-align: center">
-                          We highly recommend you take advantage of these tools
-                          as they're available.
-                        </p>
 
                         <!-- End Game Nav List -->
 
@@ -254,8 +222,9 @@
 
                       <p style="text-align: center">
                         <strong
-                          >NOTICE: CURRENTLY, DEEPL IS ONLY AVAILABLE IN THE EU,
-                          UK, US, CANADA, AND JAPAN. A CREDIT CARD IS REQUIRED
+                          >NOTICE: CURRENTLY, DEEPL IS ONLY AVAILABLE IN CERTAIN COUNTRIES.
+                          YOU CAN CHECK <a href="https://support.deepl.com/hc/en-us/articles/360020016339-DeepL-Pro-is-not-available-in-my-country">HERE</a> 
+                          TO SEE IF YOUR COUNTRY IS CURRENTLY SUPPORTED. A CREDIT CARD IS REQUIRED
                           FOR VERIFICATION PURPOSES. YOU WILL NOT BE CHARGED,
                           IT'S ONLY TO VALIDATE NEW MEMBERS WHO USE THEIR API
                           SERVICE.</strong
@@ -348,6 +317,11 @@
                         Scroll down the page and look for your Authentication
                         Key.
                         <strong>Copy this somewhere.</strong>
+                        <br/>
+                        <br/>NOTE: If the text above your Authenication Key says
+                          "Authentication Key (DeepL API and CAT Tool Integration)",
+                        <strong>you have signed up for the wrong type of account and
+                          your key will NOT work with Clarity!</strong>
                       </p>
                       <br />
 
@@ -362,7 +336,7 @@
                         Congratulations!
                         <strong
                           >You've completed the hardest part of setting up
-                          Ahkmon and Clarity's translation.</strong
+                          Clarity's translation.</strong
                         >
                       </p>
                       <br/>
@@ -403,7 +377,7 @@
                           tab.</strong
                         > Make sure the release is tagged "Latest" and not
                         "Pre-release". Download the <strong>dqxclarity.zip</strong> file. Do not download the
-                        source code files as they will not work.
+                        source code files as they are empty.
                       </p>
 
                       <img
@@ -504,7 +478,9 @@
                             Dragon Quest X. This is useful for discovering new 
                             files the translators do not have yet. This is
                             appreciated to leave on for that purpose, but it is 
-                            not required.
+                            not required. <strong>If you find your game is crashing
+                              often with this enabled, turn it off.
+                            </strong>
                           </p>
                         </li>
                         <br/>
@@ -638,7 +614,7 @@
                   <br />
 
 
-                  <div class="infoBox fullWidth">
+                  <!-- <div class="infoBox fullWidth">
                     <div class="infoBox_f fullWidth">
                       <h2 class="title_note title_icon fullWidth">
                         Setting Up Ahkmon (optional)
@@ -736,10 +712,7 @@
                       <br />
                       <br />
                     </div>
-                  </div>
-
-                  <br />
-                  <br />
+                  </div> -->
 
                   <!-- Content infoBox End -->
                 </div>
