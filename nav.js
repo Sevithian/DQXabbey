@@ -1,11 +1,14 @@
+// nav.js
 document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname;
+
   const navbarHTML = `
     <div id="globalNav" class="mainNav">
       <nav class="header">
         <ul>
-          <li class="leftmost"><a href="/index.html">Home</a></li>
+          <li class="leftmost"><a href="/index.html" data-match="/index.html">Home</a></li>
           <li class="has-subnav">
-            <a href="/pages/getting_started.html">Getting Started</a>
+            <a href="/pages/getting_started.html" data-match="/pages/getting_started.html">Getting Started</a>
             <ul class="subnav">
               <li><a href="/pages/getting_started.html#account">Setting up a Square-Enix Account</a></li>
               <li><a href="/pages/getting_started.html#trial">Activating the Windows Free Trial</a></li>
@@ -15,23 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
           </li>
           <li class="has-subnav">
-            <a href="/pages/resources.html">Resources</a>
-            <ul class="subnav">
-              <li><a href="/pages/resources/payment_guide.html">Purchasing and Subscription Guide</a></li>
-              <li><a href="/pages/resources/hiroba_guide.html">Hiroba and Cash Shop Guide</a></li>
-              <li><a href="/pages/resources/casino_guide.html">Efficient Casino Gambling Guide</a></li>
-              <li><a href="/pages/resources/otp_guide.html">One-Time-Password Setup Guide</a></li>
-            </ul>
+            <a href="/pages/resources.html" data-match="/pages/resources">Resources</a>
+            <ul class="subnav" id="resourcesSubnav"></ul>
           </li>
           <li class="has-subnav">
-            <a href="/pages/utilities.html">Utilities</a>
+            <a href="/pages/utilities.html" data-match="/pages/utilities.html">Utilities</a>
             <ul class="subnav">
               <li><a href="https://dqx-translation-project.github.io/">Setting up Translation Utilities</a></li>
             </ul>
           </li>
           <li class="has-subnav">
-            <a href="/pages/community.html">Community</a>
-            <ul class="subnav" id="community">
+            <a href="/pages/community.html" data-match="/pages/community.html">Community</a>
+            <ul class="subnav">
               <li><a href="/pages/community.html#worldwide">DQX Worldwide</a></li>
               <li><a href="/pages/community.html#dragonsden">Dragon's Den</a></li>
               <li><a href="/pages/community.html#teammoon">Team Moon</a></li>
@@ -39,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
             </ul>
           </li>
           <li class="has-subnav rightmost">
-            <a href="/pages/faq.html">FAQ</a>
-            <ul class="subnav" style="width: 150px">
+            <a href="/pages/faq.html" data-match="/pages/faq.html">FAQ</a>
+            <ul class="subnav">
               <li><a href="/pages/faq.html#general">General FAQ</a></li>
               <li><a href="/pages/faq.html#setup">Setup FAQ</a></li>
               <li><a href="/pages/faq.html#game">In-Game FAQ</a></li>
@@ -53,4 +51,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.createElement("div");
   container.innerHTML = navbarHTML.trim();
   document.body.prepend(container.firstChild);
+
+  // Populate Resources submenu from resourcesList
+  const resourcesSubnav = document.getElementById("resourcesSubnav");
+  resourcesList.forEach((resource) => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = resource.path;
+    link.textContent = resource.title;
+    li.appendChild(link);
+    resourcesSubnav.appendChild(li);
+  });
+
+  // Highlight active section
+  const links = document.querySelectorAll("#globalNav nav > ul > li > a");
+  links.forEach((link) => {
+    const matchPath = link.getAttribute("data-match");
+
+    const isExactMatch = currentPath === matchPath;
+    const isDirectoryMatch =
+      matchPath.endsWith("/") && currentPath.startsWith(matchPath);
+    const isResourcesMatch =
+      matchPath === "/pages/resources" &&
+      (currentPath === "/pages/resources.html" ||
+        currentPath.startsWith("/pages/resources/"));
+
+    if (isExactMatch || isDirectoryMatch || isResourcesMatch) {
+      link.style.backgroundColor = "green"; // Customize as needed
+      link.style.color = "white";
+    }
+  });
 });
