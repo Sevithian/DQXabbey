@@ -106,7 +106,6 @@ div::after {
 /*#region Navbar */
 
 #globalNav {
-  align-self: center;
   display: block;
   position: fixed;
   width: 100%;
@@ -331,11 +330,11 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
-.guardians-button a {
+.astoltia-button a {
   width: 210px;
   height: 75px;
   display: block;
-  background: url(../images/guardians_button.png);
+  background: url(../images/astoltia_discord_button.png);
   text-indent: -9999em;
   white-space: nowrap;
   overflow: hidden;

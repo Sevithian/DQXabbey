@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="/pages/community.html" data-match="/pages/community.html">Community</a>
             <ul class="subnav">
               <li><a href="/pages/community.html#worldwide">DQX Worldwide</a></li>
-              <li><a href="/pages/community.html#dragonsden">Dragon's Den</a></li>
               <li><a href="/pages/community.html#teammoon">Team Moon</a></li>
-              <li><a href="/pages/community.html#guardians">Guardians of Astoltia</a></li>
+              <li><a href="/pages/community.html#astoltia">Astoltia Task Force</a></li>
+              <li><a href="/pages/community.html#dragonsden">Dragon's Den</a></li>
             </ul>
           </li>
           <li class="has-subnav rightmost">
